@@ -4,8 +4,8 @@ services:
     env: node
     region: oregon
     branch: main
-  buildCommand: corepack enable && pnpm install && pnpm build
-  startCommand: pnpm run start -- -p $PORT
+    buildCommand: corepack enable && pnpm install && pnpm build
+    startCommand: pnpm run start -- -p $PORT
     instanceType: starter
     envVars:
       - key: NODE_ENV
